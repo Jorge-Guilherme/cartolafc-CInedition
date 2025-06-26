@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "nome": "Pedro",
+    "posicao": "Atacante",
+    "preco": 15.0,
+    "gols": 2,
+    "assistencias": 1,
+    "cartoes_amarelos": 0,
+    "cartoes_vermelhos": 0,
+    "pontuacao": 12.5
+  },
+  {
+    "id": 2,
+    "nome": "João",
+    "posicao": "Meio-campo",
+    "preco": 12.0,
+    "gols": 0,
+    "assistencias": 2,
+    "cartoes_amarelos": 1,
+    "cartoes_vermelhos": 0,
+    "pontuacao": 7.0
+  },
+    {
+      "id": 3,
+      "nome": "Lucas",
+      "posicao": "Zagueiro",
+      "preco": 10.0,
+      "gols": 1,
+      "assistencias": 0,
+      "cartoes_amarelos": 1,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 6.5
+    },
+    {
+      "id": 4,
+      "nome": "Carlos",
+      "posicao": "Goleiro",
+      "preco": 8.0,
+      "gols": 0,
+      "assistencias": 0,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 5.0
+    },
+    {
+      "id": 5,
+      "nome": "Rafael",
+      "posicao": "Lateral",
+      "preco": 9.0,
+      "gols": 0,
+      "assistencias": 1,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 6.0
+    },
+    {
+      "id": 6,
+      "nome": "Thiago",
+      "posicao": "Meio-campo",
+      "preco": 13.0,
+      "gols": 1,
+      "assistencias": 1,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 1,
+      "pontuacao": 4.0
+    },
+    {
+      "id": 7,
+      "nome": "Bruno",
+      "posicao": "Atacante",
+      "preco": 16.0,
+      "gols": 3,
+      "assistencias": 0,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 13.0
+    },
+    {
+      "id": 8,
+      "nome": "Gabriel",
+      "posicao": "Zagueiro",
+      "preco": 9.5,
+      "gols": 0,
+      "assistencias": 1,
+      "cartoes_amarelos": 1,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 5.5
+    },
+    {
+      "id": 9,
+      "nome": "Felipe",
+      "posicao": "Lateral",
+      "preco": 8.5,
+      "gols": 1,
+      "assistencias": 0,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 7.0
+    },
+    {
+      "id": 10,
+      "nome": "André",
+      "posicao": "Meio-campo",
+      "preco": 11.0,
+      "gols": 0,
+      "assistencias": 2,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 8.0
+    },
+    {
+      "id": 11,
+      "nome": "Diego",
+      "posicao": "Goleiro",
+      "preco": 7.5,
+      "gols": 0,
+      "assistencias": 0,
+      "cartoes_amarelos": 0,
+      "cartoes_vermelhos": 1,
+      "pontuacao": 2.0
+    },
+    {
+      "id": 12,
+      "nome": "Henrique",
+      "posicao": "Atacante",
+      "preco": 14.0,
+      "gols": 2,
+      "assistencias": 1,
+      "cartoes_amarelos": 1,
+      "cartoes_vermelhos": 0,
+      "pontuacao": 11.0
+    }
+  
+]
