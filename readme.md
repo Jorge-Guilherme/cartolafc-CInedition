@@ -97,4 +97,4 @@ Simulação de fantasy game inspirada no Cartola FC, desenvolvida em C++ para te
 1. Jorge Guilherme `<jglvc>`
 2. Vinicius França `<vfs2>`
 3. Pedro Francisco `<pfcc>`
-4.
+4. Hugo Kauan `<hklc>`
