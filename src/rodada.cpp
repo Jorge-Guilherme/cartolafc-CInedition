@@ -6,13 +6,13 @@ Rodada::Rodada(int numero) : numero(numero) {}
 
 void Rodada::atualizarPontuacoes(std::vector<Usuario>& usuarios, const std::vector<Jogador>& jogadoresAtualizados) {
     for (auto& usuario : usuarios) {
-        for (auto& meuJogador : usuario.timeEscalado.titulares) {
+        for (auto& meuJogador : usuario.getTimeEscalado().getTitulares()) {
             for (const auto& atualizado : jogadoresAtualizados) {
-                if (meuJogador.id == atualizado.id) {
-                    meuJogador.pontuacao = atualizado.pontuacao;
+                if (meuJogador.getId() == atualizado.getId()) {
+                    meuJogador.setPontuacao(atualizado.getPontuacao());
                 }
             }
         }
-        usuario.timeEscalado.calcularPontuacao();
+        usuario.getTimeEscalado().calcularPontuacao();
     }
 }

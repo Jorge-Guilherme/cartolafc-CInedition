@@ -7,15 +7,15 @@ Mercado::Mercado() {}
 void Mercado::listarJogadores() const {
     std::cout << "ID\tNome\t\tPosição\t\tPreço\n";
     for (const auto& j : jogadoresDisponiveis) {
-        std::cout << j.id << "\t" << j.nome << "\t" << j.posicao << "\t" << j.preco << "\n";
+        std::cout << j.getId() << "\t" << j.getNome() << "\t" << j.getPosicao() << "\t" << j.getPreco() << "\n";
     }
 }
 
 bool Mercado::comprarJogador(int jogadorId, double& saldo, std::vector<Jogador>& time) {
     for (const auto& j : jogadoresDisponiveis) {
-        if (j.id == jogadorId && saldo >= j.preco) {
+        if (j.getId() == jogadorId && saldo >= j.getPreco()) {
             time.push_back(j);
-            saldo -= j.preco;
+            saldo -= j.getPreco();
             return true;
         }
     }
@@ -24,8 +24,8 @@ bool Mercado::comprarJogador(int jogadorId, double& saldo, std::vector<Jogador>&
 
 bool Mercado::venderJogador(int jogadorId, double& saldo, std::vector<Jogador>& time) {
     for (auto it = time.begin(); it != time.end(); ++it) {
-        if (it->id == jogadorId) {
-            saldo += it->preco;
+        if (it->getId() == jogadorId) {
+            saldo += it->getPreco();
             time.erase(it);
             return true;
         }

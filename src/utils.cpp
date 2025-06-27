@@ -14,15 +14,12 @@ std::vector<Jogador> carregarJogadores(const std::string& filename) {
     file >> data;
     for (const auto& item : data) {
         Jogador j;
-        j.id = item["id"];
-        j.nome = item["nome"];
-        j.posicao = item["posicao"];
-        j.preco = item["preco"];
-        j.gols = item["gols"];
-        j.assistencias = item["assistencias"];
-        j.cartoes_amarelos = item["cartoes_amarelos"];
-        j.cartoes_vermelhos = item["cartoes_vermelhos"];
-        j.pontuacao = item["pontuacao"];
+        j = Jogador(item["id"], item["nome"], item["posicao"], item["preco"]);
+        j.setGols(item["gols"]);
+        j.setAssistencias(item["assistencias"]);
+        j.setCartoesAmarelos(item["cartoes_amarelos"]);
+        j.setCartoesVermelhos(item["cartoes_vermelhos"]);
+        j.setPontuacao(item["pontuacao"]);
         jogadores.push_back(j);
     }
     return jogadores;
@@ -35,9 +32,9 @@ void salvarUsuarios(const std::string& filename, const std::vector<Usuario>& usu
     json data = json::array();
     for (const auto& u : usuarios) {
         data.push_back({
-            {"id", u.id},
-            {"nome", u.nome},
-            {"saldo", u.saldo}
+            {"id", u.getId()},
+            {"nome", u.getNome()},
+            {"saldo", u.getSaldo()}
             // Adicione mais campos conforme necessário
         });
     }
@@ -53,9 +50,7 @@ std::vector<Usuario> carregarUsuarios(const std::string& filename) {
     file >> data;
     for (const auto& item : data) {
         Usuario u;
-        u.id = item["id"];
-        u.nome = item["nome"];
-        u.saldo = item["saldo"];
+        u = Usuario(item["id"], item["nome"], item["saldo"], TimeEscalado());
         // Adicione mais campos conforme necessário
         usuarios.push_back(u);
     }
