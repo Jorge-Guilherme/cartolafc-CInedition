@@ -14,7 +14,7 @@ Simulação de fantasy game inspirada no Cartola FC, desenvolvida em C++ para te
 1. **Clone o repositório e acesse a pasta do projeto:**
 
    ```sh
-   git clone [<url-do-repo>](https://github.com/Jorge-Guilherme/cartolafc-CInedition.git)
+   git clone (https://github.com/Jorge-Guilherme/cartolafc-CInedition.git)
    cd cartolafc-CInedition
    ```
 2. **Compile o projeto:**
